@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OnSight Privacy Policy</title>
+    <style>
+      body {
+        margin: 0 auto;
+        max-width: 720px;
+        padding: 32px 20px 64px;
+        font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
+        color: #1b2118;
+        background: #f4f6f1;
+      }
+      h1 { font-size: 28px; margin-bottom: 8px; }
+      .meta { color: #66705f; margin-bottom: 28px; }
+      h2 { font-size: 18px; margin-top: 28px; }
+      a { color: #2f6b1f; }
+    </style>
+  </head>
+  <body>
+    <h1>OnSight Privacy Policy</h1>
+    <p class="meta">Effective date: September 3, 2026</p>
+    <p>OnSight (“the app”) is an on-site visual assistant. You point the camera at a real object and ask a spoken question. The app sends the current frame and your question to a vision model you configure, and can read the answer aloud.</p>
+    <h2>1. We do not create accounts</h2>
+    <p>The app does not require sign-up and does not collect your name, email, or phone number. Data needed for the feature stays on your device, or is sent to a third-party model service you choose.</p>
+    <h2>2. Data we process</h2>
+    <ol>
+      <li>Camera frames: when you ask a question or auto-dictation starts, the app captures the current view so the model can “see” the scene. Frames are sent as images to the provider you choose (DeepSeek or OpenAI). The app does not save photos to your Camera Roll or keep a cloud gallery.</li>
+      <li>Voice: if system speech recognition is available, recognition runs on-device or via Apple Speech, then the text is sent with the frame. In OpenAI mode, audio may be sent to OpenAI’s transcription API. Asking a question requires the microphone.</li>
+      <li>Chat text: recognized questions and model answers are stored in the on-device session and can be cleared with New chat.</li>
+      <li>API keys: stored in the system keychain (iOS Keychain / Android Keystore) to call the provider you chose. The app’s developer cannot read the key on your device.</li>
+      <li>Preferences: dictation mode, speech rate, camera facing, and app language stay on-device.</li>
+      <li>In-app purchases: the current version does not include tips or other In-App Purchases.</li>
+    </ol>
+    <h2>3. Third parties</h2>
+    <p>Frames, questions, and (in OpenAI mode) recordings are sent to the provider you choose and are subject to that provider’s privacy policy:</p>
+    <ul>
+      <li>DeepSeek: <a href="https://www.deepseek.com">https://www.deepseek.com</a></li>
+      <li>OpenAI: <a href="https://openai.com/privacy">https://openai.com/privacy</a></li>
+    </ul>
+    <p>The current version does not include In-App Purchases. The app does not run ad tracking, does not use ATT, and does not sell data to brokers.</p>
+    <h2>4. Permissions</h2>
+    <p>Camera captures the current scene for guidance. Microphone is for spoken questions. Speech recognition turns speech into text. You can turn these off in system settings. Without camera you cannot send a frame; without microphone or speech recognition you cannot ask by voice.</p>
+    <h2>5. Children</h2>
+    <p>The app is not directed at children under 13. If you are a parent and believe a child provided data, stop using the app and clear its data.</p>
+    <h2>6. Retention and deletion</h2>
+    <p>Session content stays on-device. Uninstalling the app or tapping New chat deletes the conversation. You can clear the API key in Settings. Data sent to a provider is kept under that provider’s policy; this app cannot delete it for you.</p>
+    <h2>7. Changes</h2>
+    <p>Updates will include a new effective date. Continued use means you understand the updated policy.</p>
+    <h2>8. Contact</h2>
+    <p>After release, use the support contact listed on the App Store product page.</p>
+  </body>
+</html>

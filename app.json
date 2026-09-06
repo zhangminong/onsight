@@ -1,0 +1,132 @@
+{
+  "expo": {
+    "name": "OnSight",
+    "slug": "onsight",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "onsight",
+    "primaryColor": "#7dbe57",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.onsight.app",
+      "appleTeamId": "YSS4CZLF2J",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "OnSight uses the camera to capture the current scene so the vision model can see what you are working on.",
+        "NSMicrophoneUsageDescription": "OnSight uses the microphone for spoken questions. Recognition runs through system dictation, or OpenAI transcription when that provider is selected.",
+        "NSSpeechRecognitionUsageDescription": "OnSight converts your speech to text and sends it with the camera view to the vision model.",
+        "NSHumanReadableCopyright": "Copyright © 2026 OnSight",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "privacyManifests": {
+        "NSPrivacyTracking": false,
+        "NSPrivacyTrackingDomains": [],
+        "NSPrivacyCollectedDataTypes": [
+          {
+            "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypePhotosorVideos",
+            "NSPrivacyCollectedDataTypeLinked": false,
+            "NSPrivacyCollectedDataTypeTracking": false,
+            "NSPrivacyCollectedDataTypePurposes": [
+              "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+            ]
+          },
+          {
+            "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeAudioData",
+            "NSPrivacyCollectedDataTypeLinked": false,
+            "NSPrivacyCollectedDataTypeTracking": false,
+            "NSPrivacyCollectedDataTypePurposes": [
+              "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+            ]
+          },
+          {
+            "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeUserContent",
+            "NSPrivacyCollectedDataTypeLinked": false,
+            "NSPrivacyCollectedDataTypeTracking": false,
+            "NSPrivacyCollectedDataTypePurposes": [
+              "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+            ]
+          }
+        ],
+        "NSPrivacyAccessedAPITypes": [
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "CA92.1"
+            ]
+          },
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryFileTimestamp",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "C617.1"
+            ]
+          },
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryDiskSpace",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "E174.1"
+            ]
+          },
+          {
+            "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategorySystemBootTime",
+            "NSPrivacyAccessedAPITypeReasons": [
+              "35F9.1"
+            ]
+          }
+        ]
+      }
+    },
+    "android": {
+      "package": "com.onsight.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#12160F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#12160F",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 180,
+          "dark": {
+            "backgroundColor": "#12160F",
+            "image": "./assets/splash-icon.png"
+          }
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "OnSight uses the camera to capture the current scene so the vision model can see what you are working on.",
+          "microphonePermission": "OnSight uses the microphone for spoken questions.",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "OnSight uses the microphone for spoken questions. Recognition runs through system dictation.",
+          "speechRecognitionPermission": "OnSight converts your speech to text and sends it with the camera view to the vision model."
+        }
+      ],
+      "expo-secure-store",
+      "expo-audio",
+      "expo-status-bar",
+      "expo-asset"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
